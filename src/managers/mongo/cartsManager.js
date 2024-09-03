@@ -32,14 +32,6 @@ export default class CartManager {
             throw new Error('Carts updating failed' + error.message)
         }
     }
-    /*async populateCart(data, operation) {
-        try {
-          return data.populate(operation);
-        } catch (error) {
-          console.log({ status: "error", message: "An error occurred", error });
-          return null;
-        }
-      }*/
       async populateCart(data, fieldsToPopulate) {
         try {
             if (!fieldsToPopulate) {
